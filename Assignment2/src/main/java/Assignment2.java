@@ -137,7 +137,7 @@ public class Assignment2 {
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
         String line;
-        System.out.println("\nCMD result : \n");
+        //System.out.println("\nCMD result : \n");
         while (true) {
             line = r.readLine();
             if (line == null) { break; }
@@ -157,10 +157,11 @@ public class Assignment2 {
         countwordandcharacter();
         statistic();
         double r2=System.nanoTime();
-         System.out.println("Completing the execution= " + ((r2-r1)/1000000000 ) + " second");
+        
         double t1=System.nanoTime();
         githubpush();
         double t2=System.nanoTime();
+        System.out.println("Completing the execution= " + ((r2-r1)/1000000000 ) + " second");
         System.out.println("Uploading file= " + ((t2-t1)/1000000000 ) + " second");
 
     }
