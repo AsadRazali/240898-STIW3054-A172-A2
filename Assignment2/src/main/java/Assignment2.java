@@ -151,13 +151,17 @@ public class Assignment2 {
 
 
     public static void main(String[] args) throws IOException {
-        double t1=System.nanoTime();
+        
+        double r1=System.nanoTime();
         run();
         countwordandcharacter();
         statistic();
-        double t2=System.nanoTime();
+        double r2=System.nanoTime();
+         System.out.println("Completing the execution= " + ((r2-r1)/1000000000 ) + " second");
+        double t1=System.nanoTime();
         githubpush();
-        System.out.println("Completing the execution = " + ((t2-t1)/1000000000 ) + " second");
+        double t2=System.nanoTime();
+        System.out.println("Uploading file= " + ((t2-t1)/1000000000 ) + " second");
 
     }
 
