@@ -109,9 +109,9 @@ public class Assignment2 {
            
          
             bufferedWriter.write("Number of lines: " + lines);
-            bufferedWriter.write("\t\n");
+            bufferedWriter.write("\n");
             bufferedWriter.write("Number of words: " + words);
-            bufferedWriter.write("\t\n");
+            bufferedWriter.write("\n");
             bufferedWriter.write("Number of characters: " + chars);
 
             bufferedWriter.close();
